@@ -29,4 +29,7 @@ class BankAccount:
         else:
             print("Invalid withdrawal")
   
-  
+    def check_balance(self):
+        print(f"Balance: ${self.get_balance()}")
+
+
