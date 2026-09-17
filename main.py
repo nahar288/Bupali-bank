@@ -33,3 +33,9 @@ class BankAccount:
         print(f"Balance: ${self.get_balance()}")
 
 
+account_number = input("Enter account number: ")
+account_holder = input("Enter account holder name: ")
+initial_balance = float(input("Enter initial balance: "))
+
+account = BankAccount(account_number, account_holder, initial_balance)
+
