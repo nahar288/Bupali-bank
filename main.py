@@ -29,8 +29,7 @@ class BankAccount:
         else:
             print("Invalid withdrawal")
   
-    def check_balance(self):
-        print(f"Balance: ${self.get_balance()}")
+  
 
 
 account_number = input("Enter account number: ")
@@ -42,30 +41,27 @@ account = BankAccount(account_number, account_holder, initial_balance)
 while True:
 
     print("===== BANK MENU =====")
-    print("1. Check Balance")
-    print("2. Deposit")
-    print("3. Withdraw")
-    print("4. Set Balance")
-    print("5. Exit")
+    print("1. Deposit")
+    print("2. Withdraw")
+    print("3. Set Balance")
+    print("4. Exit")
 
     choice = input("Choose an option: ")
 
-    if choice == "1":
-        account.check_balance()
-
-    elif choice == "2":
+    
+    elif choice == "1":
         amount = float(input("Enter deposit amount: "))
         account.deposit(amount)
 
-    elif choice == "3":
+    elif choice == "2":
         amount = float(input("Enter withdrawal amount: "))
         account.withdraw(amount)
 
-    elif choice == "4":
+    elif choice == "3":
         amount = float(input("Enter new balance: "))
         account.set_balance(amount)
 
-    elif choice == "5":
+    elif choice == "4":
         print("dhonnobash🤑")
         break
 
